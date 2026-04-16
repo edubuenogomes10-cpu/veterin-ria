@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Thayná</title>
+    <link rel="icon" href="thay.ico" type="image/x-icon">
+     <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+
+<body>
+
+        <div id="main">
+    <nav class="nav-container">
+
+    <!-- PRIMEIRA CAMADA (BRANCA) -->
+    <section class="hero">
+        <div class="texto">
+            <h1>O cuidado é o <br><span>AMOR!</span></h1>
+            <p>
+                Atendimento veterinário com qualidade, dedicação e carinho.
+                Consultas presenciais e à domicílio.
+            </p>
+            <a href="https://wa.me/555399654272?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta!" target="_blank">
+                <button>Marque sua consulta</button>
+            </a>
+        </div>
+
+        <div class="imagem">
+            <img src="imagens/thay.PNG" alt="Veterinária">
+        </div>
+    </section>
+
+    <!-- SEGUNDA CAMADA (MARROM) -->
+    <section class="two">
+        <div class="left-side">
+            <img src="imagens/dog1.jpeg" alt="dog1">
+        </div>
+        <div class="right-side">
+            <h2>Biografia</h2>
+            <p>Olá, sou Thayná Mendoza. 
+Formada em Medicina Veterinária em fevereiro de 2026, sou apaixonada por cada rabinho abanando e ronronar que entra no consultório. Atuo com pequenos animais e escolhi me especializar em dermatologia de cães e gatos, porque sei como coceiras, alergias e problemas de pele afetam a qualidade de vida dos pets e da família toda. Estou no início da carreira, mas com muita dedicação, estudo constante e amor pelos animais para oferecer o melhor cuidado ao seu companheiro.</p>
+        </div>
+    </section>
+    <div class="three">
+            <div class="card">
+                <img class="petsitter" src="imagens/negao.jpeg" alt="">
+                <h3>Pet Sitter</h3>
+                <button onclick="abrirModal('Pet Sitter')">Ler mais</button>
+            </div>
+            <div class="card">
+                <img class="arcadenoe" src="imagens/cat.jpeg" alt="">
+                <h3>Arca de Noé</h3>
+                <button onclick="abrirModal('Arca de Noé')">Ler mais</button>
+            </div>
+        </div> <!-- ✅ fecha .three -->
+
+    <!-- MODAL -->
+    <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999; align-items:center; justify-content:center;">
+        <div style="background:white; border-radius:20px; padding:40px; max-width:500px; width:90%; text-align:center; position:relative;">
+            <button onclick="fecharModal()" style="position:absolute; top:15px; right:20px; background:none; color:#333; font-size:20px; box-shadow:none;">✕</button>
+            <h2 id="modal-titulo" style="color:#8C7D32; margin-bottom:20px;"></h2>
+            <p id="modal-texto" style="color:#555; line-height:1.6; font-size:16px;"></p>
+        </div>
+    </div>
+
+            <section class="contato">
+        <div class="contato-container">
+            <h2>Fale Comigo 🐾</h2>
+            <p>Entre em contato ou me siga nas redes sociais!</p>
+            <div class="contato-botoes">
+            
+            <a href="https://wa.me/555399654272?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta!" 
+                target="_blank" class="btn-whats">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+
+            <a href="https://instagram.com/medica_veterinaria_thayna" 
+                target="_blank" class="btn-insta">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+
+            </div>
+        </div>
+            </section>
+
+    <script>
+        const infos = {
+            "Pet Sitter": "✈️ Vai viajar e o coração fica apertado em deixar seu pet?\n\nEu cuido dele no conforto de casa! 🏡❤️\n\nComo pet sitter e médica veterinária, ofereço:\n\n- Rotina mantida: comida, água, passeios e brincadeiras nos horários que ele já conhece\n- Ambiente seguro: sem estresse de hotelzinho, no território que ele ama\n- Olhar clínico: fico de olho em qualquer sinal diferente na pele, comportamento ou apetite\n- Fotos e vídeos diários: pra você matar a saudade e viajar tranquilo\n- Carinho de sobra: colo, conversa e atenção individualizada",
+            "Arca de Noé": "🚑 24h por eles! 🐾  \n\n- Sou médica veterinária e atendo seu cão ou gato no conforto de casa, a qualquer hora, em Bagé e região. \n\n- Emergências, vacinas, check-ups e avaliação dermatológica sem estresse de deslocamento. Atendimento com carinho, técnica e olhar clínico especializado em pele.  \n\n- Salve meu contato e me chame no WhatsApp quando precisar 📲."
+        }
+
+        function abrirModal(nome) {
+            document.getElementById('modal-titulo').innerText = nome;
+            document.getElementById('modal-texto').innerText = infos[nome];
+            const modal = document.getElementById('modal');
+            modal.style.display = 'flex';
+        }
+
+        function fecharModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        
+    </script>
+
+</body>
+</html>

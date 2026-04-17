@@ -1,113 +1,341 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vet Thayná</title>
+    <title>Vet Thayn&aacute;</title>
+    <meta
+        name="description"
+        content="Atendimento veterin&aacute;rio com carinho, dedica&ccedil;&atilde;o e consultas presenciais ou a domic&iacute;lio."
+    >
     <link rel="icon" href="thay.ico" type="image/x-icon">
-     <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
-
-   
 </head>
-
 <body>
+    <header class="site-header" id="topo">
+        <div class="container nav-shell">
+            <a class="brand" href="#topo" aria-label="Ir para o topo">
+                <span class="brand-mark">&#10084;</span>
+                <span class="brand-text">Vet Thayn&aacute;</span>
+            </a>
 
-        <div id="main">
-    <nav class="nav-container">
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <!-- PRIMEIRA CAMADA (BRANCA) -->
-    <section class="hero">
-        <div class="texto">
-            <h1>O cuidado é o <br><span>AMOR!</span></h1>
-            <p>
-                Atendimento veterinário com qualidade, dedicação e carinho.
-                Consultas presenciais e à domicílio.
-            </p>
-            <a href="https://wa.me/555399654272?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta!" target="_blank">
-                <button>Marque sua consulta</button>
+            <nav class="main-nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Servi&ccedil;os</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a
+                class="button button-primary nav-cta"
+                href="https://wa.me/555399654272?text=Ol%C3%A1,%20gostaria%20de%20marcar%20uma%20consulta!"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Agendar
             </a>
         </div>
+    </header>
 
-        <div class="imagem">
-            <img src="imagens/thay.PNG" alt="Veterinária">
-        </div>
-    </section>
+    <main>
+        <section class="hero-section">
+            <div class="hero-blur hero-blur-left"></div>
+            <div class="hero-blur hero-blur-right"></div>
 
-    <!-- SEGUNDA CAMADA (MARROM) -->
-    <section class="two">
-        <div class="left-side">
-            <img src="imagens/dog1.jpeg" alt="dog1">
-        </div>
-        <div class="right-side">
-            <h2>Biografia</h2>
-            <p>Olá, sou Thayná Mendoza. 
-Formada em Medicina Veterinária em fevereiro de 2026, sou apaixonada por cada rabinho abanando e ronronar que entra no consultório. Atuo com pequenos animais e escolhi me especializar em dermatologia de cães e gatos, porque sei como coceiras, alergias e problemas de pele afetam a qualidade de vida dos pets e da família toda. Estou no início da carreira, mas com muita dedicação, estudo constante e amor pelos animais para oferecer o melhor cuidado ao seu companheiro.</p>
-        </div>
-    </section>
-    <div class="three">
-            <div class="card">
-                <img class="petsitter" src="imagens/negao.jpeg" alt="">
-                <h3>Pet Sitter</h3>
-                <button onclick="abrirModal('Pet Sitter')">Ler mais</button>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Cuidado com amor</span>
+                    <h1>O cuidado &eacute; o <span>AMOR!</span></h1>
+                    <p>
+                        Atendimento veterin&aacute;rio com qualidade, dedica&ccedil;&atilde;o e carinho.
+                        Consultas presenciais e a domic&iacute;lio para cuidar do seu pet com mais conforto.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a
+                            class="button button-primary"
+                            href="https://wa.me/555399654272?text=Ol%C3%A1,%20gostaria%20de%20marcar%20uma%20consulta!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Marque sua consulta
+                        </a>
+                        <a class="button button-secondary" href="#sobre">Saiba mais</a>
+                    </div>
+
+                    <div class="hero-points">
+                        <div class="info-pill">
+                            <strong>Bag&eacute; e regi&atilde;o</strong>
+                            <span>Atendimento pr&oacute;ximo e humanizado</span>
+                        </div>
+                        <div class="info-pill">
+                            <strong>Consultas com carinho</strong>
+                            <span>Olhar cl&iacute;nico e aten&ccedil;&atilde;o individual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-photo-card">
+                        <img src="imagens/thay.PNG" alt="Veterin&aacute;ria Thayn&aacute;">
+                    </div>
+                    <div class="floating-card">
+                        <strong>Atendimento dedicado</strong>
+                        <span>Carinho, t&eacute;cnica e escuta para cada pet</span>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img class="arcadenoe" src="imagens/cat.jpeg" alt="">
-                <h3>Arca de Noé</h3>
-                <button onclick="abrirModal('Arca de Noé')">Ler mais</button>
-            </div>
-        </div> <!-- ✅ fecha .three -->
+        </section>
 
-    <!-- MODAL -->
-    <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999; align-items:center; justify-content:center;">
-        <div style="background:white; border-radius:20px; padding:40px; max-width:500px; width:90%; text-align:center; position:relative;">
-            <button onclick="fecharModal()" style="position:absolute; top:15px; right:20px; background:none; color:#333; font-size:20px; box-shadow:none;">✕</button>
-            <h2 id="modal-titulo" style="color:#8C7D32; margin-bottom:20px;"></h2>
-            <p id="modal-texto" style="color:#555; line-height:1.6; font-size:16px;"></p>
+        <section class="about-section" id="sobre">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="about-photo-frame">
+                        <img src="imagens/dog1.jpeg" alt="Cachorro feliz">
+                    </div>
+                </div>
+
+                <div class="about-copy">
+                    <span class="eyebrow eyebrow-light">Sobre mim</span>
+                    <h2>Biografia</h2>
+                    <p>
+                        Ol&aacute;, sou <strong>Thayn&aacute; Mendoza</strong>. Formada em Medicina Veterin&aacute;ria em fevereiro de 2026,
+                        sou apaixonada por cada rabinho abanando e ronronar que entra no consult&oacute;rio.
+                    </p>
+                    <p>
+                        Atuo com pequenos animais e escolhi me especializar em
+                        <strong>dermatologia de c&atilde;es e gatos</strong>, porque sei como coceiras, alergias e problemas de pele
+                        afetam a qualidade de vida dos pets e da fam&iacute;lia toda.
+                    </p>
+                    <p class="about-note">
+                        Estou no in&iacute;cio da carreira, mas com muita dedica&ccedil;&atilde;o, estudo constante e amor pelos animais
+                        para oferecer o melhor cuidado ao seu companheiro.
+                    </p>
+
+                    <div class="about-highlights">
+                        <article class="highlight-card">
+                            <h3>Formada em 2026</h3>
+                            <p>Medicina Veterin&aacute;ria com foco em pequenos animais.</p>
+                        </article>
+                        <article class="highlight-card">
+                            <h3>Dermatologia pet</h3>
+                            <p>Olhar atento para pele, conforto e bem-estar.</p>
+                        </article>
+                        <article class="highlight-card">
+                            <h3>Atendimento humano</h3>
+                            <p>Escuta, acolhimento e orienta&ccedil;&atilde;o para a fam&iacute;lia.</p>
+                        </article>
+                        <article class="highlight-card">
+                            <h3>Consulta com carinho</h3>
+                            <p>Cuidado t&eacute;cnico sem perder a delicadeza no atendimento.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="servicos">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Servi&ccedil;os</span>
+                    <h2>Como posso ajudar</h2>
+                    <p>
+                        Servi&ccedil;os pensados para trazer seguran&ccedil;a, praticidade e cuidado real para o seu pet.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="imagens/negao.jpeg" alt="Pet sitter">
+                            <div class="service-overlay">
+                                <span class="service-icon">PS</span>
+                                <h3>Pet Sitter</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Cuidado profissional para seu pet enquanto voc&ecirc; viaja, com rotina preservada e aten&ccedil;&atilde;o individual.</p>
+                            <button class="button button-gold" type="button" onclick="abrirModal('pet-sitter')">Ler mais</button>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img src="imagens/cat.jpeg" alt="Arca de No&eacute;">
+                            <div class="service-overlay">
+                                <span class="service-icon">24h</span>
+                                <h3>Arca de No&eacute;</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Atendimento veterin&aacute;rio com mais conforto para c&atilde;es e gatos, sem o estresse do deslocamento.</p>
+                            <button class="button button-gold" type="button" onclick="abrirModal('arca-de-noe')">Ler mais</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Galeria</span>
+                    <h2>As fotos que j&aacute; fazem parte da sua hist&oacute;ria</h2>
+                
+                </div>
+
+                <div class="gallery-grid">
+                    <article class="gallery-card gallery-card-tall gallery-card-portrait">
+                        <img src="imagens/thay.PNG" alt="Veterin&aacute;ria Thayn&aacute; em destaque">
+                    </article>
+                    <article class="gallery-card gallery-card-top">
+                        <img src="imagens/mel.jpeg" alt="Pet em atendimento">
+                    </article>
+                    <article class="gallery-card gallery-card-puppy">
+                        <img src="imagens/dog1.jpeg" alt="Cachorro em consulta">
+                    </article>
+                    <article class="gallery-card gallery-card-cat">
+                        <img src="imagens/negao.jpeg" alt="Pet preto em destaque">
+                    </article>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato">
+            <div class="contact-glow"></div>
+            <div class="container contact-shell">
+                <span class="eyebrow eyebrow-light">Contato</span>
+                <h2>Fale comigo</h2>
+                <p>
+                    Entre em contato ou me siga nas redes sociais. Estou dispon&iacute;vel para cuidar do seu pet com aten&ccedil;&atilde;o e carinho.
+                </p>
+
+                <div class="contact-pills">
+                    <div class="contact-pill">
+                        <strong>Localiza&ccedil;&atilde;o</strong>
+                        <span>Bag&eacute; e regi&atilde;o</span>
+                    </div>
+                    <div class="contact-pill">
+                        <strong>Atendimento</strong>
+                        <span>Consultas presenciais e a domic&iacute;lio</span>
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    <a
+                        class="button button-whatsapp"
+                        href="https://wa.me/555399654272?text=Ol%C3%A1,%20gostaria%20de%20marcar%20uma%20consulta!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        WhatsApp
+                    </a>
+
+                    <a
+                        class="button button-instagram"
+                        href="https://instagram.com/medica_veterinaria_thayna"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+                </div>
+
+                <p class="contact-footnote">&copy; 2026 Vet Thayn&aacute; Mendoza. Todos os direitos reservados.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+            <button class="modal-close" type="button" onclick="fecharModal()" aria-label="Fechar modal">&times;</button>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-texto"></p>
+            <a
+                class="button button-primary modal-action"
+                href="https://wa.me/555399654272?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o!"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Entrar em contato
+            </a>
         </div>
     </div>
 
-            <section class="contato">
-        <div class="contato-container">
-            <h2>Fale Comigo 🐾</h2>
-            <p>Entre em contato ou me siga nas redes sociais!</p>
-            <div class="contato-botoes">
-            
-            <a href="https://wa.me/555399654272?text=Olá,%20gostaria%20de%20marcar%20uma%20consulta!" 
-                target="_blank" class="btn-whats">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-                <span>WhatsApp</span>
-            </a>
-
-            <a href="https://instagram.com/medica_veterinaria_thayna" 
-                target="_blank" class="btn-insta">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-
-            </div>
-        </div>
-            </section>
-
     <script>
         const infos = {
-            "Pet Sitter": "✈️ Vai viajar e o coração fica apertado em deixar seu pet?\n\nEu cuido dele no conforto de casa! 🏡❤️\n\nComo pet sitter e médica veterinária, ofereço:\n\n- Rotina mantida: comida, água, passeios e brincadeiras nos horários que ele já conhece\n- Ambiente seguro: sem estresse de hotelzinho, no território que ele ama\n- Olhar clínico: fico de olho em qualquer sinal diferente na pele, comportamento ou apetite\n- Fotos e vídeos diários: pra você matar a saudade e viajar tranquilo\n- Carinho de sobra: colo, conversa e atenção individualizada",
-            "Arca de Noé": "🚑 24h por eles! 🐾  \n\n- Sou médica veterinária e atendo seu cão ou gato no conforto de casa, a qualquer hora, em Bagé e região. \n\n- Emergências, vacinas, check-ups e avaliação dermatológica sem estresse de deslocamento. Atendimento com carinho, técnica e olhar clínico especializado em pele.  \n\n- Salve meu contato e me chame no WhatsApp quando precisar 📲."
-        }
+            "pet-sitter": {
+                titulo: "Pet Sitter",
+                texto: "Vai viajar e o cora\u00e7\u00e3o fica apertado em deixar seu pet?\n\nEu cuido dele no conforto de casa.\n\nComo pet sitter e m\u00e9dica veterin\u00e1ria, ofere\u00e7o:\n\n- Rotina mantida: comida, \u00e1gua, passeios e brincadeiras nos hor\u00e1rios que ele j\u00e1 conhece.\n- Ambiente seguro: sem estresse de hotelzinho, no territ\u00f3rio que ele ama.\n- Olhar cl\u00ednico: aten\u00e7\u00e3o a qualquer sinal diferente na pele, comportamento ou apetite.\n- Fotos e v\u00eddeos di\u00e1rios: para voc\u00ea matar a saudade e viajar com tranquilidade.\n- Carinho de sobra: colo, conversa e cuidado individualizado."
+            },
+            "arca-de-noe": {
+                titulo: "Arca de No\u00e9",
+                texto: "24h por eles.\n\nSou m\u00e9dica veterin\u00e1ria e atendo seu c\u00e3o ou gato no conforto de casa, em Bag\u00e9 e regi\u00e3o.\n\nFa\u00e7o atendimentos com acolhimento, t\u00e9cnica e olhar cl\u00ednico para emerg\u00eancias, vacinas, check-ups e avalia\u00e7\u00e3o dermatol\u00f3gica, reduzindo o estresse do deslocamento.\n\nSalve meu contato e me chame no WhatsApp quando precisar."
+            }
+        };
 
-        function abrirModal(nome) {
-            document.getElementById('modal-titulo').innerText = nome;
-            document.getElementById('modal-texto').innerText = infos[nome];
-            const modal = document.getElementById('modal');
-            modal.style.display = 'flex';
+        const modal = document.getElementById("modal");
+        const modalTitle = document.getElementById("modal-titulo");
+        const modalText = document.getElementById("modal-texto");
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navShell = document.querySelector(".nav-shell");
+        const navLinks = document.querySelectorAll(".main-nav a");
+
+        function abrirModal(chave) {
+            modalTitle.textContent = infos[chave].titulo;
+            modalText.textContent = infos[chave].texto;
+            modal.classList.add("is-open");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("modal-open");
         }
 
         function fecharModal() {
-            document.getElementById('modal').style.display = 'none';
+            modal.classList.remove("is-open");
+            modal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("modal-open");
         }
 
-        
-    </script>
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                fecharModal();
+            }
+        });
 
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                fecharModal();
+            }
+        });
+
+        menuToggle.addEventListener("click", function () {
+            const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", String(!expanded));
+            navShell.classList.toggle("menu-open");
+        });
+
+        navLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                navShell.classList.remove("menu-open");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        window.addEventListener("scroll", function () {
+            document.body.classList.toggle("is-scrolled", window.scrollY > 16);
+        });
+    </script>
 </body>
 </html>
